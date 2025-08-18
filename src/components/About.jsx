@@ -1,17 +1,16 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Player } from "@lottiefiles/react-lottie-player";
+import codingAnimation from "../assets/gif/CodingWithCoffile.json";
 
 const About = () => {
   return (
     <section className="min-h-screen bg-black flex items-center justify-center px-6 font-clash">
       <div className="flex flex-col md:flex-row items-center gap-12  mt-28 max-w-7xl w-full">
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="bg-purple-600 w-72 h-72 md:w-96 md:h-96 rounded-xl shadow-xl"
-        ></motion.div>
+        <div className="w-[500px] h-[500px]">
+          <Player autoplay loop src={codingAnimation} />
+        </div>
 
         <motion.div
           initial={{ x: 50, opacity: 0 }}
