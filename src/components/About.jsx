@@ -3,10 +3,16 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import codingAnimation from "../assets/gif/CodingWithCoffile.json";
+import { FaGithub } from "react-icons/fa";
+import { FaMediumM } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-black flex items-center justify-center px-6 font-clash">
+    <section
+      id="about"
+      className="min-h-screen bg-black flex items-center justify-center px-6 font-clash"
+    >
       <div className="flex flex-col md:flex-row items-center gap-12  mt-28 max-w-7xl w-full">
         <div className="w-[500px] h-[500px]">
           <Player autoplay loop src={codingAnimation} />
@@ -40,6 +46,17 @@ const About = () => {
             applications with clean and modern design using React, Typescript,
             and Tailwind CSS.
           </p>
+          <div className="flex items-center gap-3 mt-5">
+            <a href="https://github.com/Shabnammammadova">
+              <FaGithub className="text-white w-8 h-8 hover:text-purple-700 transition-all duration-100" />
+            </a>
+            <a href="https://medium.com/@mmmdovasbnm47">
+              <FaMediumM className="text-white w-8 h-8 hover:text-purple-700 transition-all duration-100" />
+            </a>
+            <a href="https://www.linkedin.com/in/%C5%9F%C9%99bn%C9%99m-m%C9%99mm%C9%99dova/">
+              <FaLinkedinIn className="text-white w-8 h-8 hover:text-purple-700 transition-all duration-100" />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

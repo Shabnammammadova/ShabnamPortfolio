@@ -12,6 +12,7 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "@tailwindcss/vite": "^4.1.12",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "hamburger-react": "^2.5.2",
     "lottie-react": "^2.4.1",
@@ -21,6 +22,7 @@
     "react-icons": "^5.5.0",
     "react-lottie-player": "^2.1.0",
     "react-type-animation": "^3.2.0",
+    "tailwind-merge": "^3.3.1",
     "type-animation": "^0.1.5"
   },
   "devDependencies": {
