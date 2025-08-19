@@ -53,7 +53,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block font-semibold mb-1 text-white"
                 >
-                  Your full name
+                  Full name
                 </label>
                 <input
                   type="text"
@@ -66,11 +66,12 @@ const Contact = () => {
                   htmlFor="email"
                   className="block font-semibold mb-1 text-white"
                 >
-                  Your email address
+                  Email address
                 </label>
                 <input
                   type="email"
                   id="email"
+                  required
                   className="border-2 border-black rounded-full  py-2.5 px-4 w-full outline-none"
                 />
               </div>
@@ -80,7 +81,7 @@ const Contact = () => {
                 htmlFor="subject"
                 className="block font-semibold mb-1 text-white"
               >
-                Your subject
+                Subject
               </label>
               <input
                 type="text"
@@ -93,7 +94,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block font-semibold mb-1 text-white"
               >
-                Your message
+                Message
               </label>
               <textarea
                 id="message"

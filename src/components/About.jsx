@@ -13,7 +13,7 @@ const About = () => {
       id="about"
       className="min-h-screen bg-black flex items-center justify-center px-6 font-clash"
     >
-      <div className="flex flex-col md:flex-row items-center gap-12  mt-28 max-w-7xl w-full">
+      <div className="flex flex-col gap-5 lg:flex-row items-center lg:gap-12  mt-28 max-w-7xl w-full">
         <div className="w-[500px] h-[500px]">
           <Player autoplay loop src={codingAnimation} />
         </div>
@@ -41,12 +41,12 @@ const About = () => {
             }}
             repeat={Infinity}
           />
-          <p className="mt-4 text-white text-xl max-w-md">
+          <p className="mt-4 text-white md:text-sm lg:text-xl  max-w-md">
             Passionate about building responsive and interactive web
             applications with clean and modern design using React, Typescript,
             and Tailwind CSS.
           </p>
-          <div className="flex items-center gap-3 mt-5">
+          <div className="flex  xs:justify-center lg:justify-start items-center gap-3 mt-5">
             <a href="https://github.com/Shabnammammadova">
               <FaGithub className="text-white w-8 h-8 hover:text-purple-700 transition-all duration-100" />
             </a>
