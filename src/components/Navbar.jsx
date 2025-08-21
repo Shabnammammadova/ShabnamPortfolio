@@ -16,7 +16,7 @@ const Navbar = () => {
       <header className="fixed top-0 left-0 w-full z-[99999999] bg-black  font-clash text-white">
         <div className="flex items-center justify-between p-5 ml-4 mr-4">
           <div>
-            <h1 className="font-extrabold  text-3xl cursor-pointer text-pretty text-purple-700 ">
+            <h1 className="font-extrabold  text-3xl cursor-pointer text-pretty  text-purple-700 ">
               Shabnam
             </h1>
           </div>

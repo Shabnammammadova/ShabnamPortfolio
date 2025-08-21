@@ -47,45 +47,30 @@ const Contact = () => {
 
         <div className="w-full flex justify-center">
           <form className="w-full max-w-[700px] flex flex-col gap-5 font-playfair font-semibold">
-            <div className="flex flex-col md:flex-row gap-5">
-              <div className="w-full">
-                <label
-                  htmlFor="name"
-                  className="block font-semibold mb-1 text-white"
-                >
-                  Full name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="border-2 border-black rounded-full py-2.5 px-4 w-full outline-none"
-                />
-              </div>
-              <div className="w-full md:w-1/2">
-                <label
-                  htmlFor="email"
-                  className="block font-semibold mb-1 text-white"
-                >
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  className="border-2 border-black rounded-full  py-2.5 px-4 w-full outline-none"
-                />
-              </div>
-            </div>
-            <div>
+            <div className="w-full">
               <label
-                htmlFor="subject"
+                htmlFor="name"
                 className="block font-semibold mb-1 text-white"
               >
-                Subject
+                Full name
               </label>
               <input
                 type="text"
-                id="subject"
+                id="name"
+                className="border-2 border-black rounded-full py-2.5 px-4 w-full outline-none"
+              />
+            </div>
+            <div className="w-full ">
+              <label
+                htmlFor="email"
+                className="block font-semibold mb-1 text-white"
+              >
+                Email address
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
                 className="border-2 border-black rounded-full  py-2.5 px-4 w-full outline-none"
               />
             </div>
