@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import codingAnimation from "../assets/gif/CodingWithCoffile.json";
-import { FaGithub } from "react-icons/fa";
+import { FaArrowUp, FaGithub } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <section
       id="about"
@@ -59,6 +76,14 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-40 p-3 rounded-3xl w-10 h-10 flex items-center justify-center bg-violet-400 shadow-lg"
+        >
+          <FaArrowUp className="text-black" />
+        </button>
+      )}
     </section>
   );
 };

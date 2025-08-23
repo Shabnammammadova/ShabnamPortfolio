@@ -115,7 +115,7 @@ const Skills = () => {
       id="skills"
       className="py-16 px-4 text-white w-full bg-black font-clash font-bold"
     >
-      <h2 className="text-6xl font-semibold text-purple-700 text-center mb-12 font-playfair">
+      <h2 className="text-6xl font-semibold pt-6 text-purple-700 text-center mb-12 font-playfair">
         Skills
       </h2>
 

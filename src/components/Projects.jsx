@@ -11,6 +11,17 @@ const projects = [
     img: "https://cdn-icons-png.freepik.com/512/11800/11800110.png",
   },
   {
+    name: "Winne E-commerce",
+    github: "https://github.com/Shabnammammadova/Winne-E-commerce",
+    img: "https://cdn-icons-png.flaticon.com/512/1942/1942536.png",
+  },
+  {
+    name: "Rent a car",
+    link: "https://rent-a-car-jade.vercel.app/",
+    github: "https://github.com/Shabnammammadova/Rent-a-car",
+    img: "https://cdn-icons-png.flaticon.com/512/8566/8566110.png",
+  },
+  {
     name: "ToDo App",
     link: "https://to-do-app-three-green-98.vercel.app/",
     github: "https://github.com/Shabnammammadova/ToDo-App",
@@ -36,19 +47,19 @@ const Project = () => {
       id="projects"
       className="mx-auto px-4 py-20 bg-black text-white font-clash"
     >
-      <h1 className="text-5xl font-bold  text-purple-700 mb-16 text-center">
+      <h1 className="text-5xl font-bold p-5 text-purple-700 mb-16 text-center">
         My Projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative rounded-3xl overflow-hidden bg-[#1a1b24]/30 backdrop-blur-md border border-purple-700 shadow-xl transform hover:scale-[1.02] transition-all duration-500 group"
+            className="relative rounded-3xl overflow-hidden bg-[#1a1b24]/30 backdrop-blur-md border border-purple-600/20 shadow-lg shadow-purple-500/50 transform transition-all duration-500  group"
           >
             <img
               src={project.img}
               alt={project.name}
-              className="w-full h-60 object-contain p-6 group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-60 object-contain p-6 group-hover:scale-105 transition-transform duration-500 motion-preset-blur-right "
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4">
               <a

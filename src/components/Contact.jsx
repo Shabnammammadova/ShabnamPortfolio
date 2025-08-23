@@ -21,7 +21,7 @@ const Contact = () => {
             </button>
             <div>
               <span className="font-clash text-3xl text-white">Address</span>
-              <p className="text-white">Baku, Azerbaijan</p>
+              <p className="text-purple-800">Baku, Azerbaijan</p>
             </div>
           </div>
           <div className="flex items-start gap-2">
@@ -29,9 +29,14 @@ const Contact = () => {
               {" "}
               <MdEmail className="text-white w-6 h-6" />
             </button>
-            <div>
+            <div className="flex flex-col">
               <span className="font-clash text-3xl text-white">Email</span>
-              <p className="text-white">mammadovaashabnamm@gmail.com</p>
+              <a
+                href="mailto:mammadovaashabnamm@gmail.com"
+                className="text-purple-800"
+              >
+                mammadovaashabnamm@gmail.com
+              </a>
             </div>
           </div>
           <div className="flex items-start gap-2">
@@ -40,7 +45,7 @@ const Contact = () => {
             </button>
             <div>
               <span className="font-clash text-3xl text-white">Phone</span>
-              <p className="text-white">+994 55 829 09 25</p>
+              <p className="text-purple-800">+994 55 829 09 25</p>
             </div>
           </div>
         </div>
@@ -88,7 +93,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <a
-              href="#_"
+              href="mailto:mammadovaashabnamm@gmail.com"
               class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
             >
               <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
