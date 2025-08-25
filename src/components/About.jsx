@@ -31,7 +31,7 @@ const About = () => {
       className="min-h-screen bg-black flex items-center justify-center px-6 font-clash"
     >
       <div className="flex flex-col gap-5 lg:flex-row items-center lg:gap-12  mt-28 max-w-7xl w-full">
-        <div className="w-[500px] h-[500px]">
+        <div className="xs:max-w-[320px] xs:max-h-[350px] sm:max-w-[500px] sm:max-h-[500px]">
           <Player autoplay loop src={codingAnimation} />
         </div>
 

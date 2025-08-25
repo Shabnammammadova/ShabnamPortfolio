@@ -123,7 +123,10 @@ const Skills = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="overflow-hidden w-full"
+        className="overflow-hidden 
+  w-full 
+  xs:max-w-full 
+  sm:max-w-full"
       >
         <motion.div
           className="flex gap-8 w-max"
@@ -143,14 +146,17 @@ const Skills = () => {
               href={skill.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1a1b24] text-white  font-clash font-bold p-5 rounded-xl flex flex-col gap-2 text-center items-center justify-center  border border-transparent hover:border-purple-600  transition duration-300 min-w-[150px] h-36 border-t-2  border-t-violet-700 "
+              className="bg-[#1a1b24] text-white font-clash font-bold p-5 rounded-xl flex flex-col gap-2 text-center items-center justify-center border border-transparent hover:border-purple-600 transition duration-300 min-w-[150px] h-36 border-t-2 border-t-violet-700 
+  xs:min-w-[120px] xs:h-28 xs:p-3 xs:gap-1"
             >
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="w-16 h-16 object-contain"
+                className="w-16 h-16 object-contain xs:w-12 xs:h-12"
               />
-              <span className="text-lg font-bold font-clash">{skill.name}</span>
+              <span className="text-lg font-bold font-clash xs:text-sm">
+                {skill.name}
+              </span>
             </motion.a>
           ))}
         </motion.div>
